@@ -1,3 +1,86 @@
+
+/* Club Registration Form Styles */
+
+/* Style the whole page */
+/* Step 2 - Club Registration Form Styles */
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* light gray-blue background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50; /* dark blue */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+/* Container for form */
+.container {
+    background-color: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Style form labels and inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #3498db; /* blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: #ecf0f1; /* light gray */
+    color: #2c3e50;
+}
+
+
+
 /* Club Registration Form Styles */
 /* TODO: Add your CSS styles here in Step 2 */
 
