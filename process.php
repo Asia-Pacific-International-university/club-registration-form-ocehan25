@@ -7,6 +7,51 @@ Step 3 Requirements:
 - Process form data using $_POST
 - Display submitted information back to user
 - Handle name, email, and club fields
+*/
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get form data
+    $name = $_POST['name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $club = $_POST['club'] ?? '';
+    
+    // Display submitted information
+    echo "<!DOCTYPE html>
+    <html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Registration Successful</title>
+        <link rel='stylesheet' href='styles.css'>
+    </head>
+    <body>
+        <header>
+            <h1>Registration Successful!</h1>
+        </header>
+        
+        <main>
+            <div class='container'>
+                <h2>Your Registration Details:</h2>
+                <p><strong>Name:</strong> $name</p>
+                <p><strong>Email:</strong> $email</p>
+                <p><strong>Club:</strong> " . ucfirst($club) . " Club</p>
+                
+                <p><a href='index.html'>Register Another Student</a></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Student Club Registration System</p>
+        </footer>
+    </body>
+    </html>";
+} else {
+    // Redirect if accessed directly
+    header('Location: index.html');
+    exit();
+}
+?>
+/*
+
 
 Step 4 Requirements:
 - Add validation for all fields
